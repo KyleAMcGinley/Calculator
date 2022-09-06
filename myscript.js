@@ -14,4 +14,10 @@ function subtract(...args){
     return difference;
 }
 
-console.log(subtract(5, 2))
+function multiply(...args){
+    let product = 1;
+    for (var i = 0; i < args.length; i++){
+        product *= args[i];
+    }
+    return product;
+}
