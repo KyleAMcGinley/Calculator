@@ -41,3 +41,17 @@ function operate(x, operator, y){
         return divide(x, y);
     }
 }
+
+const display = document.querySelector('#display');
+
+const one = document.querySelector('#one');
+function addingOneToDisplay(){
+    display.textContent = '1'
+}
+one.addEventListener('click', addingOneToDisplay)
+
+const two = document.querySelector('#two');
+function addingTwoToDisplay(){
+    display.textContent = '2'
+}
+two.addEventListener('click', addingTwoToDisplay)
