@@ -29,3 +29,15 @@ function divide(...args){
     }
     return dividend;
 }
+
+function operate(x, operator, y){
+    if(operator == '+'){
+        return add(x, y);
+    } else if(operator == '-'){
+        return subtract(x, y);
+    } else if(operator == '*'){
+        return multiply(x, y);
+    } else if(operator == '/'){
+        return divide(x, y);
+    }
+}
