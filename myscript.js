@@ -150,12 +150,77 @@ function addingOneToSecondNumber(){
     display.textContent = secondNumber;
 }
 
+function addingTwoToSecondNumber(){
+    secondNumber += '2';
+    display.textContent = secondNumber;
+}
+
+function addingThreeToSecondNumber(){
+    secondNumber += '3';
+    display.textContent = secondNumber;
+}
+
+function addingFourToSecondNumber(){
+    secondNumber += '4';
+    display.textContent = secondNumber;
+}
+
+function addingFiveToSecondNumber(){
+    secondNumber += '5';
+    display.textContent = secondNumber;
+}
+
+function addingSixToSecondNumber(){
+    secondNumber += '6';
+    display.textContent = secondNumber;
+}
+
+function addingSevenToSecondNumber(){
+    secondNumber += '7';
+    display.textContent = secondNumber;
+}
+
+function addingEightToSecondNumber(){
+    secondNumber += '8';
+    display.textContent = secondNumber;
+}
+
+function addingNineToSecondNumber(){
+    secondNumber += '9';
+    display.textContent = secondNumber;
+}
+
+function addingZeroToSecondNumber(){
+    secondNumber += '0';
+    display.textContent = secondNumber;
+}
+
+//Each time an operator button is clicked, it will store the first number,
+//store the operator sign, and clear the first number from the display
+//It will also change the event listeners for each button so that clicking
+//number buttons adds to the second number, not the first
+
 plus.addEventListener('click', () => {
     storeFirstNumber();
     storePlusOperator();
     clearDisplayForSecondNumber();
     one.removeEventListener('click', addingOneToFirstNumber);
     one.addEventListener('click', addingOneToSecondNumber)
+    two.removeEventListener('click', addingTwoToFirstNumber);
+    two.addEventListener('click', addingTwoToSecondNumber);
+    three.removeEventListener('click', addingThreeToFirstNumber);
+    three.addEventListener('click', addingThreeToSecondNumber);
+    four.removeEventListener('click', addingFourToFirstNumber);
+    four.addEventListener('click', addingFourToSecondNumber);
+    five.removeEventListener('click', addingFiveToFirstNumber);
+    five.addEventListener('click', addingFiveToSecondNumber);
+    six.removeEventListener('click', addingSixToFirstNumber);
+    six.addEventListener('click', addingSixToSecondNumber);
+    seven.removeEventListener('click', addingSevenToFirstNumber);
+    seven.addEventListener('click', addingSevenToSecondNumber);
+    eight.removeEventListener('click', addingEightToFirstNumber);
+    eight.addEventListener('click', addingEightToSecondNumber);
+
 });
 
 function storeMinusOperator(){
