@@ -151,9 +151,36 @@ plus.addEventListener('click', () => {
     clearDisplayForSecondNumber();
 });
 
-plus.addEventListener('click', () => {
+function storeMinusOperator(){
+    const operator = '-';
+    return console.log(operator);
+}
+
+minus.addEventListener('click', () => {
     storeFirstNumber();
-    storePlusOperator();
+    storeMinusOperator();
+    clearDisplayForSecondNumber();
+});
+
+function storeTimesOperator(){
+    const operator = '*';
+    return console.log(operator);
+}
+
+times.addEventListener('click', () => {
+    storeFirstNumber();
+    storeTimesOperator();
+    clearDisplayForSecondNumber();
+});
+
+function storeDividedByOperator(){
+    const operator = '/';
+    return console.log(operator);
+}
+
+dividedBy.addEventListener('click', () => {
+    storeFirstNumber();
+    storeDividedByOperator();
     clearDisplayForSecondNumber();
 });
 
