@@ -21,3 +21,11 @@ function multiply(...args){
     }
     return product;
 }
+
+function divide(...args){
+    let dividend = args[0];
+    for (var i = 1; i < args.length; i++){
+        dividend /= args[i];
+    }
+    return dividend;
+}
