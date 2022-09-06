@@ -117,6 +117,14 @@ function addingZeroToDisplay(){
 }
 zero.addEventListener('click', addingZeroToDisplay);
 
+const clear = document.querySelector('#clear');
+function clearingDisplay(){
+    firstNumber = '';
+    display.textContent = firstNumber;
+}
+clear.addEventListener('click', clearingDisplay);
+
+
 
 
 
