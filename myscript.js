@@ -49,14 +49,75 @@ var firstNumber = '';
 
 const one = document.querySelector('#one');
 function addingOneToDisplay(){
-    firstNumber += '1'
+    firstNumber += '1';
     display.textContent = firstNumber;
 }
-
-one.addEventListener('click', addingOneToDisplay)
+one.addEventListener('click', addingOneToDisplay);
 
 const two = document.querySelector('#two');
 function addingTwoToDisplay(){
-    display.textContent = '2'
+    firstNumber += '2';
+    display.textContent = firstNumber;
 }
-two.addEventListener('click', addingTwoToDisplay)
+two.addEventListener('click', addingTwoToDisplay);
+
+const three = document.querySelector('#three');
+function addingThreeToDisplay(){
+    firstNumber += '3';
+    display.textContent = firstNumber;
+}
+three.addEventListener('click', addingThreeToDisplay);
+
+const four = document.querySelector('#four');
+function addingFourToDisplay(){
+    firstNumber += '4';
+    display.textContent = firstNumber;
+}
+four.addEventListener('click', addingFourToDisplay);
+
+const five = document.querySelector('#five');
+function addingFiveToDisplay(){
+    firstNumber += '5';
+    display.textContent = firstNumber;
+}
+five.addEventListener('click', addingFiveToDisplay);
+
+const six = document.querySelector('#six');
+function addingSixToDisplay(){
+    firstNumber += '6';
+    display.textContent = firstNumber;
+}
+six.addEventListener('click', addingSixToDisplay);
+
+const seven = document.querySelector('#seven');
+function addingSevenToDisplay(){
+    firstNumber += '7';
+    display.textContent = firstNumber;
+}
+seven.addEventListener('click', addingSevenToDisplay);
+
+const eight = document.querySelector('#eight');
+function addingEightToDisplay(){
+    firstNumber += '8';
+    display.textContent = firstNumber;
+}
+eight.addEventListener('click', addingEightToDisplay);
+
+const nine = document.querySelector('#nine');
+function addingNineToDisplay(){
+    firstNumber += '9';
+    display.textContent = firstNumber;
+}
+nine.addEventListener('click', addingNineToDisplay);
+
+const zero = document.querySelector('#zero');
+function addingZeroToDisplay(){
+    firstNumber += '0';
+    display.textContent = firstNumber;
+}
+zero.addEventListener('click', addingZeroToDisplay);
+
+
+
+
+
