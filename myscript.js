@@ -41,13 +41,18 @@ function operate(x, operator, y){
         return divide(x, y);
     }
 }
-
+//Need to display the numbers that are clicked into the display div
+//Clicking a number button changes the text content of display
+//Need to determine how to string together multiple numbers
 const display = document.querySelector('#display');
+var firstNumber = '';
 
 const one = document.querySelector('#one');
 function addingOneToDisplay(){
-    display.textContent = '1'
+    firstNumber += '1'
+    display.textContent = firstNumber;
 }
+
 one.addEventListener('click', addingOneToDisplay)
 
 const two = document.querySelector('#two');
