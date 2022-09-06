@@ -124,6 +124,41 @@ function clearingDisplay(){
 }
 clear.addEventListener('click', clearingDisplay);
 
+//By now the firstNumber is entered into display
+//Need to store the new first number when an operator key is pressed
+const plus = document.querySelector('#plus');
+const minus = document.querySelector('#minus');
+const times = document.querySelector('#times');
+const dividedBy = document.querySelector('#divided-by');
+
+var secondNumber = '';
+
+function storeFirstNumber(){
+   const newFirstNumber = document.querySelector('#display').textContent
+   return console.log(newFirstNumber);
+}
+function storePlusOperator(){
+    const operator = '+';
+    return console.log(operator);
+}
+function clearDisplayForSecondNumber(){
+    display.textContent = secondNumber;
+}
+
+plus.addEventListener('click', () => {
+    storeFirstNumber();
+    storePlusOperator();
+    clearDisplayForSecondNumber();
+});
+
+plus.addEventListener('click', () => {
+    storeFirstNumber();
+    storePlusOperator();
+    clearDisplayForSecondNumber();
+});
+
+
+
 
 
 
