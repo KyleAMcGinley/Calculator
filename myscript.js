@@ -145,10 +145,17 @@ function clearDisplayForSecondNumber(){
     display.textContent = secondNumber;
 }
 
+function addingOneToSecondNumber(){
+    secondNumber += '1';
+    display.textContent = secondNumber;
+}
+
 plus.addEventListener('click', () => {
     storeFirstNumber();
     storePlusOperator();
     clearDisplayForSecondNumber();
+    one.removeEventListener('click', addingOneToFirstNumber);
+    one.addEventListener('click', addingOneToSecondNumber)
 });
 
 function storeMinusOperator(){
