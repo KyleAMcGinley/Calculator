@@ -50,7 +50,7 @@ const numbers = document.querySelectorAll('#numbers>button');
 
 function addEventListenerNumbers(list, event, fn){
     const numbers = document.querySelectorAll('#numbers>button');
-    for(i = 0; i <= numbers.length - 1; i++){
+    for(var i = 0; i <= numbers.length - 1; i++){
 
         list[i].addEventListener(event, fn);
     };
@@ -61,3 +61,20 @@ function changeDisplay(){
 }
 
 addEventListenerNumbers(numbers, 'click', changeDisplay);
+
+//Need to add event listeners to the operators
+//When clicked it will save the value of the display's text content
+//Will use a loop to assign the event listeners to the operators
+
+const operators = document.querySelectorAll('#operators>button');
+
+function addEventListenerOperators(list, event, fn){
+    const operators = document.querySelectorAll('#operators>button');
+    for(var i = 0; i <= operators.length - 1; i++){
+
+        list[i].addEventListener(event, fn);
+    };
+}
+
+function clickedOperator(){
+}
