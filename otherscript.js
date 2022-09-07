@@ -77,4 +77,25 @@ function addEventListenerOperators(list, event, fn){
 }
 
 function clickedOperator(){
+    var x = 0
+    x = display.textContent;
+    var chosenOperator = '';
+    chosenOperator = this.textContent;
+}
+
+function clearDisplay(){
+    const display = document.querySelector('#display');
+    display.textContent = '';
+
+}
+//This function assigns all operators with click event and stores the displays's text content as x,
+//stores the chosen operator, and clears the display for the new number
+
+addEventListenerOperators(operators, 'click', () => {
+    clickedOperator();
+    clearDisplay();
+});
+
+function evaluate(){
+
 }
