@@ -1,4 +1,31 @@
+#calculator{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+}
+
 #display{
     display: flex;
-    padding: 20px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+
+#numbers{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 400px;
+    width: 300px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+button{
+    height: 100px;
+    width: 100px;
+    margin: 0px;
 }
