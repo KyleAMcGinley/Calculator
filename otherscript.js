@@ -115,3 +115,11 @@ equals.addEventListener('click', () => {
 
 //Make clear button reset values
 clearButton = document.querySelector('#clear');
+
+function clearValues(){
+    display.textContent = '';
+    firstNumber = 0;
+    sign = '',
+    secondNumber = 0;
+}
+clearButton.addEventListener('click', clearValues)
