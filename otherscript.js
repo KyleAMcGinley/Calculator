@@ -76,26 +76,44 @@ function addEventListenerOperators(list, event, fn){
     };
 }
 
-function clickedOperator(){
-    var x = 0
-    x = display.textContent;
+function getOperatorSign(){
     var chosenOperator = '';
-    chosenOperator = this.textContent;
+    return chosenOperator = this.textContent;
+}
+
+function getFirstNumber(){
+    var x = 0;
+    return x = display.textContent;
 }
 
 function clearDisplay(){
     const display = document.querySelector('#display');
-    display.textContent = '';
+    return display.textContent = '';
 
 }
 //This function assigns all operators with click event and stores the displays's text content as x,
 //stores the chosen operator, and clears the display for the new number
 
 addEventListenerOperators(operators, 'click', () => {
-    clickedOperator();
+    getOperatorSign();
+    getFirstNumber();
     clearDisplay();
 });
 
-function evaluate(){
-
+//Need to make function that stores the second number into y variable
+//Need to run operate function when equal sign is clicked
+//Need to display the answer 
+function getSecondNumber(){
+    var y = 0;
+    return y = display.textContent;
 }
+
+function evaluate(x, operator, y){
+    
+}
+
+const equals = document.querySelector('#equals');
+equals.addEventListener('click', evaluate);
+
+
+
