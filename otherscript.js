@@ -41,6 +41,7 @@ function operate(x, operator, y){
         return divide(x, y);
     }
 }
+
 //Need to display the numbers that are clicked into the display div
 //Clicking a number button changes the text content of display
 const display = document.querySelector('#display');
@@ -76,44 +77,41 @@ function addEventListenerOperators(list, event, fn){
     };
 }
 
-function getOperatorSign(){
-    var chosenOperator = '';
-    return chosenOperator = this.textContent;
-}
-
-function getFirstNumber(){
-    var x = 0;
-    return x = display.textContent;
-}
-
 function clearDisplay(){
     const display = document.querySelector('#display');
     return display.textContent = '';
 
 }
+
+var firstNumber = 0;
+var sign = '';
+
 //This function assigns all operators with click event and stores the displays's text content as x,
 //stores the chosen operator, and clears the display for the new number
 
 addEventListenerOperators(operators, 'click', () => {
-    getOperatorSign();
-    getFirstNumber();
+    firstNumberString = display.textContent;
+    firstNumber = Number(firstNumberString);
+    sign = event.target.textContent
     clearDisplay();
 });
+
+
+
 
 //Need to make function that stores the second number into y variable
 //Need to run operate function when equal sign is clicked
 //Need to display the answer 
-function getSecondNumber(){
-    var y = 0;
-    return y = display.textContent;
-}
+var secondNumber = 0;
 
-function evaluate(x, operator, y){
-    
-}
+
 
 const equals = document.querySelector('#equals');
-equals.addEventListener('click', evaluate);
+equals.addEventListener('click', () => {
+    secondNumberString = display.textContent;
+    secondNumber = Number(secondNumberString);
+    return display.textContent = operate(firstNumber, sign, secondNumber);
+});
 
-
-
+//Make clear button reset values
+clearButton = document.querySelector('#clear');
